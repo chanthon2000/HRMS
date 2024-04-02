@@ -1,0 +1,9 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+.header-title{
+    font-size: 50px;
+    font-weight: 600;
+}

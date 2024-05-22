@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Table } from 'antd';
+import { Table, Tag } from 'antd';
 const columns = [
   {
     title: 'Name',
@@ -12,8 +12,27 @@ const columns = [
   {
     title: 'Address',
     dataIndex: 'address',
+    render: (_, { address }) => {
+      let color = 'green';
+      return(
+        <>
+        <div >
+        <Tag style={{fontSize:30}} color={color}>
+              {address}
+            </Tag>
+        </div>
+
+
+      </>
+      )
+    }
   },
+
+  
+
 ];
+
+
 const data = [];
 for (let i = 0; i < 46; i++) {
   data.push({
